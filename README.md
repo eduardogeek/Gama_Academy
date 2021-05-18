@@ -1,25 +1,36 @@
-# Gama_Academy / Itaú
+# Gama Academy / Itaú - https://eduardogoulartluders-gamaacademy.netlify.app/
 
 Objetivo: Criar um formulário para registrar dados pessoais - Desafio Cadastro Pessoal - Atração
+
 Referência Interface: https://github.com/educacao-gama/desafios-gama/tree/main/bankline/atracao
 
-Orientações:
-Construção da parte lógica
-Sugestão de ferramenta: Visual Studio Code (permitida a alteração de cores da interface)
 
-Linguagens: HTML | CSS | JavaScript
+Orientações:
+- Construção da parte lógica
+Sugestão de ferramenta: 
+- Visual Studio Code (permitida a alteração de cores da interface)
+
+
+Linguagens: 
+- HTML
+- CSS
+- JavaScript
+
 
 Ferramenta utilizado
-- Visual Code
-- CSS Gradiente - https://cssgradient.io/
+- Visual Studio Code - é uma versão reduzida do ambiente de desenvolvimento oficial da Microsoft focado exclusivamente no editor de código - https://code.visualstudio.com/
+- CSS Gradiente - Ferramenta de cores Degradê - https://cssgradient.io/
 - Validação CPF - https://rogertakemiya.com.br/validar-cpf-com-javascript/
 - VIACEP (API) - Consulte CEPs de todo o Brasil - https://viacep.com.br/exemplo/javascript/
+- WebHook - É um recurso que envia informações em tempo real - https://webhook.site/
+
 
 Estudos
 - W3 Schools - https://www.w3schools.com/
 - MDN Web Docs - https://developer.mozilla.org/
 - Curso Gama Academy - Front-End
 - Livro "HTML & CSS", Autor John Duckett, Editora Alta Books
+- Livro "JAVASCRIPT & JQUERY", Autor John Duckett, Editora Alta Books
 
 
 REFERÊNCIA INTERFACE: 

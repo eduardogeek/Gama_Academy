@@ -1,3 +1,4 @@
+/* Validar CPF */
 function _cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g, '');
     if (cpf == '') return false;
@@ -81,25 +82,21 @@ function limpar() {
     document.getElementById("telefonecelular").style.backgroundColor = "#fff";
 }
 
-
-
 /* Enviar formulário */
 const formularioDeCadastro = document.getElementById('form-cadastro')
 
 formularioDeCadastro.addEventListener('submit', function (e) {
     e.preventDefault()
 
-
-
     let nome = document.getElementById('nome').value;
     let cpf = document.getElementById('cpf').value;
     let rg = document.getElementById('rg').value;
     let sexo = document.getElementById('sexo').value;
-    let endereco = document.getElementById('endereco').value;
+    let rua = document.getElementById('rua').value;
     let numero = document.getElementById('numero').value;
     let bairro = document.getElementById('bairro').value;
     let cidade = document.getElementById('numero').value;
-    let estado = document.getElementById('uf').value;
+    let uf = document.getElementById('uf').value;
     let cep = document.getElementById('cep').value;
     let telefonefixo = document.getElementById('telefonefixo').value;
     let telefonecelular = document.getElementById('telefonecelular').value;
@@ -117,11 +114,11 @@ formularioDeCadastro.addEventListener('submit', function (e) {
             cpf: cpf,
             rg: rg,
             sexo: sexo,
-            endereco: endereco,
+            rua: rua,
             numero: numero,
             bairro: bairro,
             cidade: cidade,
-            estado: estado,
+            uf: uf,
             cep: cep,
             telefonefixo: telefonefixo,
             telefonecelular: telefonecelular
@@ -139,24 +136,25 @@ formularioDeCadastro.addEventListener('submit', function (e) {
     document.getElementById("cpf").value = "";
     document.getElementById("rg").value = "";
     document.getElementById("sexo").value = "";
-    document.getElementById("endereco").value = "";
+    document.getElementById("rua").value = "";
     document.getElementById("numero").value = "";
     document.getElementById("bairro").value = "";
     document.getElementById("cidade").value = "";
-    document.getElementById("estado").value = "";
+    document.getElementById("uf").value = "";
     document.getElementById("cep").value = "";
     document.getElementById("telefonefixo").value = "";
     document.getElementById("telefonecelular").value = "";
 
 })
 
-function limpa_formulário_cep() {
+/* Autocompleta CEP CPF */
+/*function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value = ("");
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
     document.getElementById('uf').value = ("");
-}
+}*/
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
