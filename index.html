@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Desafio Cadastro Pessoal - Atração</title>
 </head>
+
 <body>
-    <h1>Em Desenvolvimento ... </h1>
-    <script src="js/script.js"></script>
+    <div class="box">
+        <div class="box-center">
+            <div class="box-shadow">
+                <div class="box-content">
+                    <div class="esquerda">
+                        <br><br><br><br><br>
+                        <div>
+                        <img src="img/logo-itau-256.png" alt="Logomarca Itaú">
+                    </div><br><br><br><div>
+                        <img src="img/logo-gama.png" width="260px" alt="Logomarca Gama Academy">
+                </div>
+                    </div>
+                    <div class="direita">
+                        <div class="titulo center">
+                            <h1>Gama Academy - Transformando Talentos para o Futuro</h1>
+                        </div>
+                        <div class="form">
+                            <form id="form-cadastro">
+                                <div class="center">
+                                    <label for="nome" class="required">Nome</label>
+                                    <input type="text" id="nome" required placeholder="Digite o seu Nome Completo" size="60" onblur="validarNome(this)">
+                                </div><br>
+                                <div class="center">
+                                    <label for="CPF" class="required">CPF</label>
+                                    <input type="text" id="cpf" required onblur="validarCPF(this)" maxlength="11"
+                                        placeholder="Digite apenas números">
+                                    <label for="RG">RG</label>
+                                    <input type="text" id="rg" onblur="validarRG(this)" size="13" maxlength="13" placeholder="Registro Geral">
+                                    <label for="sexo">Sexo</label>
+                                    <select name="sexo" id="sexo" onselect="validarSexo(this)">
+                                        <option value=""></option>
+                                        <option value="feminino">F</option>
+                                        <option value="masculino">M</option>
+                                    </select><br>
+                                </div><br>
+                                <div class="center">
+                                    <label for="endereco" class="required">Endereço</label>
+                                    <input type="text" id="rua" onblur="validarEndereco(this)" size="40"required placeholder="Digite o seu Endereço">
+                                    <label for="numero" class="required">Número</label>
+                                    <input type="text" id="numero" size="6" onblur="validarNumero(this)" required>
+                                </div><br>
+                                <div class="center">
+                                    <label for="bairro">Bairro</label>
+                                    <input type="text" id="bairro" onblur="validarBairro(this)">
+                                    <label for="Cidade">Cidade</label>
+                                    <input type="text" id="cidade" onblur="validarCidade(this)">
+                                </div><br>
+                                <div class="center">
+                                    <label for="Estado">Estado</label>
+                                    <input type="text" id="uf" onblur="validarEstado(this)">
+                                    <label for="CEP">CEP</label>
+                                    <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);" placeholder="XXXXX-XXX" size=11 maxlength="9" onblur="buscaCep()(this)" >
+                                </div><br>
+                                <div class="center">
+                                    <label for="Telefone Fixo">Telefone Fixo</label>
+                                    <input type="tel" id="telefonefixo" onblur="validarTelefoneFixo(this)" placeholder="(XX) XXXX-XXXX" size=15 maxlength="14">
+                                    <label for="Telefone Celular" class="required">Telefone Celular</label>
+                                    <input type="tel" id="telefonecelular" onblur="validarTelefoneCelular(this)" placeholder="(XX) XXXXX-XXXX" size=17 maxlength="15" required>
+                                </div>
+                                <div class="footer center">
+                                    <input class="botao" type="reset" value="Cancelar" onclick="limpar()">
+                                    <input class="botao" type="submit" value="Cadastrar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
 </body>
+
 </html>

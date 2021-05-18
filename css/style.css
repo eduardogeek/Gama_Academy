@@ -1,0 +1,131 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} 
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 30px auto;
+    color: white;
+    font-size: 26px;
+}
+
+.box {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.box-center {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box-shadow {
+    width: 960px;
+    height: 590px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, .6);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-content {
+    border-radius: 20px;
+    width: 960px;
+    height: 590px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.esquerda {
+    width: 260px;
+    height: 590px;
+    
+    border-radius: 20px 0px 0px 20px;
+    background: rgb(236,112,0);
+    background: linear-gradient(180deg, rgba(236,112,0,1) 0%, rgba(236,112,0,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.direita {
+    width: 700px;
+    height: 590px;
+    background-color: rgba(0, 0, 255, 0.3);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.form {
+    color:white;
+}
+
+label {
+    font-weight:bolder;
+    margin: 0 20px;
+}
+
+label.required:after {
+    content: '*';
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+input[type=text]:not(.basic),
+input[type=tel]:not(.basic),
+input[type=email]:not(.basic),
+select:not(.basic),
+textarea:not(.basic) {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 16px;
+}
+
+.center {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: white;
+    margin-top: 28px;
+    border-radius: 0 0 20px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=submit], input[type=reset] {
+    font-size: 16px;
+    background-color: white;
+    color: #00f;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #00f;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    font-size: 16px;
+    background-color: #00f;
+    color: white;
+}
